@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <title>Forms Review</title>
+</head>
+
+<body>
+  <section id="overlay">
+    <img src="https://image.flaticon.com/icons/svg/1290/1290555.svg"
+  
+      alt="logo" id="logo">
+     
+    <hr>
+    <form action="submission.html" method="POST">
+      <h1>Choose your Plant-Based Meal</h1>
+      <h3>Don't be a fool nutrition is cool</h3>
+      <section class="protein">
+        <label for="patty">What type of vegan protein would you like?</label>
+        <input type="text" name="patty" id="patty">
+      </section>
+      <hr>
+
+  
+      <section class="size">
+        <span>You want XXL burger?</span>
+        <br>
+        <input type="radio" name="size" id="yes" value="yes">
+        <label for="yes">Yes, please</label>
+        <input type="radio" name="size" id="no" value="no">
+        <label for="no">No, thanks</label>
+      </section>
+      <br>
+      <img src="https://image.flaticon.com/icons/svg/1704/1704531.svg"
+  
+      alt="logo" id="logo">
+    </hr>
+      <section class="cooked">
+        
+        <label for="doneness">How big portion of cashew cheese you desire?</label>
+        <br>
+        <span>None</span>
+        <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+        <span>Gimme the cheesy heaven</span>
+      </section>
+      <hr>
+
+      <section class="toppings">
+        <span>If not cashew cheese then what instead?</span>
+        <br>
+        <input type="checkbox" name="guacamole" id="guacamole" value="guacamole">
+        <label for="guacamole">Guacamole</label>
+        <input type="checkbox" name="topping" id="vegan mayo" value="vegan mayo">
+        <label for="vegan mayo">Vegan Mayo</label>
+        <input type="checkbox" name="topping" id="paprika cheese" value="paprika cheese">
+        <label for="paprika cheese">Paprika Cheese</label>
+      </section>
+      <br>
+      <img src="https://image.flaticon.com/icons/svg/1526/1526987.svg"
+  
+      alt="logo" id="logo">
+      
+      <section class="bun-type">
+        <label for="bun">What type of bun would you like?</label>
+        <select name="bun" id="bun">
+          <option value="whole grain">Whole Grain</option>
+          <option value="whole wheat">Whole Wheat</option>
+          <option value="oat bread">Oat Bread</option>
+        </select>
+      </section>
+      <hr>
+
+      <section class="sauce-selection">
+        <label for="sauce">What type of sauce would you like?</label>
+        <input list="sauces" id="sauce" name="sauce">
+        <datalist id="sauces">
+          <option value="Garlic"></option>
+          <option value="Coriander"></option>
+          <option value="Mustard"></option>
+        </datalist>
+      </section>
+      <hr>
+      <br>
+      <section class="extra-info">
+        <label for="extra">Anything more to make your dream happen?</label>
+        <br>
+        <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+      </section>
+
+      <section class="submission">
+        <input type="submit" value="Submit">
+      </section>
+    </form>
+  </section>
+</body>
+
+</html>
